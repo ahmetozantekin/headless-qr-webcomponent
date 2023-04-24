@@ -5,15 +5,66 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Headless QR</title>
     <script defer src="/build/wc-headless-qr.js"></script>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        font-family: sans-serif;
+        min-height: 90vh;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+      }
+      code {
+        background-color: #f1f1f1;
+        padding: 5px 10px;
+        height: 120px;
+        margin-bottom: 20px;
+      }
+    </style>
   </head>
 
   <body>
-    <headless-qr
-      url="hello headless qr"
-      color="#717171"
-      background="#f1f1f1"
-      size="250px"
-      output="svg"
-    ></headless-qr>
+    <section>
+      <h3>svg</h3>
+      <code>
+        &lt;headless-qr <br />
+        &nbsp;&nbsp;&nbsp;url="hello headless qr" <br />
+        &nbsp;&nbsp;&nbsp;color="#717171" <br />
+        &nbsp;&nbsp;&nbsp;background="#ffffff" <br />
+        &nbsp;&nbsp;&nbsp;size="250px" <br />
+        &nbsp;&nbsp;&nbsp;output="svg" <br />
+        &gt;&lt;/headless-qr&gt;
+      </code>
+      <headless-qr
+        url="hello headless qr (svg)"
+        color="#717171"
+        background="#ffffff"
+        size="250px"
+        output="svg"
+      ></headless-qr>
+    </section>
+
+    <section>
+      <h3>html</h3>
+      <code>
+        &lt;headless-qr <br />
+        &nbsp;&nbsp;&nbsp;url="hello headless qr" <br />
+        &nbsp;&nbsp;&nbsp;color="#213f5c" <br />
+        &nbsp;&nbsp;&nbsp;size="250px" <br />
+        &nbsp;&nbsp;&nbsp;output="html" <br />
+        &gt;&lt;/headless-qr&gt;
+      </code>
+      <headless-qr
+        url="hello headless qr (html)"
+        color="#213f5c"
+        size="250px"
+        output="html"
+      ></headless-qr>
+    </section>
   </body>
 </html>

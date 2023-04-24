@@ -11,8 +11,6 @@ export const generateSvg = (modules, size, color, backgroundColor) => {
   const cellSize = (pxConvert(size, true) / QR_STATIC_SIZE).toFixed(5);
   let svgStr = `<svg xmlns:ev="http://www.w3.org/2001/xml-events" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">`;
 
-  console.log("modules:", modules);
-
   for (let row = 0; row < modules.length; row++) {
     for (let col = 0; col < modules[row].length; col++) {
       svgStr += `<rect x="${(row * cellSize).toFixed(5)}" y="${(
