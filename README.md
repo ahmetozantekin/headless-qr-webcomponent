@@ -5,7 +5,7 @@ A simple web component for QR code generation. Using Rich Harris's [headless-qr]
 #### Usage
 
 ```html
-<script defer src="/build/wc-headless-qr.js"></script>
+<script defer src="/path/to/wc-headless-qr.js"></script>
 
 <headless-qr
   url="https://test.com"
