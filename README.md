@@ -29,3 +29,7 @@ A simple web component for QR code generation. Using Rich Harris's [headless-qr]
 | color      |   string    | #000000 |
 | size       |   string    | 250px   |
 | output     | svg or html | svg     |
+
+#### Preview
+[demo](https://headless-qr-webcomponent.vercel.app/)
+
