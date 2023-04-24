@@ -1,0 +1,3 @@
+$QR_WIDTH: 33;
+$size: var(--size);
+$repeat: calc(#{$size} / #{$QR_WIDTH});

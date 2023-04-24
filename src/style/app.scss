@@ -1,0 +1,13 @@
+@import "./variables";
+
+.qr {
+  display: grid;
+  width: $size;
+  grid-template-columns: repeat(auto-fill, $repeat);
+  .c {
+    height: $repeat;
+    &.f {
+      background-color: var(--color);
+    }
+  }
+}
